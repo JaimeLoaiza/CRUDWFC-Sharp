@@ -64,6 +64,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CrudFinalDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrudFinalDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -115,6 +120,17 @@
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>DBCrudFinal.Designer.cs</LastGenOutput>
     </EntityDeploy>
+    <None Include="CrudFinalDataSet.xsc">
+      <DependentUpon>CrudFinalDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="CrudFinalDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CrudFinalDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CrudFinalDataSet.xss">
+      <DependentUpon>CrudFinalDataSet.xsd</DependentUpon>
+    </None>
     <None Include="Modelos\DBCrudFinal.edmx.diagram">
       <DependentUpon>DBCrudFinal.edmx</DependentUpon>
     </None>

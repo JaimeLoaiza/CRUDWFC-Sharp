@@ -1,13 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
+﻿using CRUDWFC_Sharp.Modelos;
+using System;
 using System.Data;
-using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using CRUDWFC_Sharp.Modelos;
 
 namespace CRUDWFC_Sharp
 {
@@ -86,6 +81,11 @@ namespace CRUDWFC_Sharp
                 }
                 Refrescar();
             }
+        }
+
+        private void BtnSalir_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

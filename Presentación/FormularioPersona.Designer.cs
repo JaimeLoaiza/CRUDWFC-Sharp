@@ -37,8 +37,8 @@
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.txtEdad = new System.Windows.Forms.TextBox();
             this.btnGuardar = new System.Windows.Forms.Button();
-            this.lblIdPersona = new System.Windows.Forms.Label();
-            this.txtIdPersona = new System.Windows.Forms.TextBox();
+            this.btnsalir = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lblNombre
@@ -111,7 +111,7 @@
             // 
             // btnGuardar
             // 
-            this.btnGuardar.Location = new System.Drawing.Point(280, 244);
+            this.btnGuardar.Location = new System.Drawing.Point(280, 159);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(113, 39);
             this.btnGuardar.TabIndex = 8;
@@ -119,22 +119,25 @@
             this.btnGuardar.UseVisualStyleBackColor = true;
             this.btnGuardar.Click += new System.EventHandler(this.BtnGuardar_Click);
             // 
-            // lblIdPersona
+            // btnsalir
             // 
-            this.lblIdPersona.AutoSize = true;
-            this.lblIdPersona.Location = new System.Drawing.Point(32, 22);
-            this.lblIdPersona.Name = "lblIdPersona";
-            this.lblIdPersona.Size = new System.Drawing.Size(55, 13);
-            this.lblIdPersona.TabIndex = 9;
-            this.lblIdPersona.Text = "IdPersona";
+            this.btnsalir.Location = new System.Drawing.Point(280, 244);
+            this.btnsalir.Name = "btnsalir";
+            this.btnsalir.Size = new System.Drawing.Size(113, 39);
+            this.btnsalir.TabIndex = 11;
+            this.btnsalir.Text = "SALIR";
+            this.btnsalir.UseVisualStyleBackColor = true;
+            this.btnsalir.Click += new System.EventHandler(this.Btnsalir_Click);
             // 
-            // txtIdPersona
+            // label1
             // 
-            this.txtIdPersona.Location = new System.Drawing.Point(112, 19);
-            this.txtIdPersona.MaxLength = 5;
-            this.txtIdPersona.Name = "txtIdPersona";
-            this.txtIdPersona.Size = new System.Drawing.Size(139, 20);
-            this.txtIdPersona.TabIndex = 10;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(109, 25);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(214, 16);
+            this.label1.TabIndex = 12;
+            this.label1.Text = "INFORMACIÓN DE PERSONA";
             // 
             // formularioPersona
             // 
@@ -142,8 +145,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(405, 295);
-            this.Controls.Add(this.txtIdPersona);
-            this.Controls.Add(this.lblIdPersona);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.btnsalir);
             this.Controls.Add(this.btnGuardar);
             this.Controls.Add(this.txtEdad);
             this.Controls.Add(this.txtNombre);
@@ -176,7 +179,7 @@
         private System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.TextBox txtEdad;
         private System.Windows.Forms.Button btnGuardar;
-        private System.Windows.Forms.Label lblIdPersona;
-        private System.Windows.Forms.TextBox txtIdPersona;
+        private System.Windows.Forms.Button btnsalir;
+        private System.Windows.Forms.Label label1;
     }
 }
